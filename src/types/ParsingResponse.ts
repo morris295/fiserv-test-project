@@ -1,6 +1,6 @@
 import { ParsedData } from "./ParsedData";
 
-export class ParsingResult {
+export class ParsingResponse {
     statusCode: number;
     data: ParsedData;
 

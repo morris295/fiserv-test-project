@@ -1,8 +1,8 @@
-import { ParsingResult } from "../types/ParsingResponse";
+import { ParsingResponse } from "../types/ParsingResponse";
 import { ParserInterface } from "./ParserInterface";
 
 export class ParserServiceV2 implements ParserInterface {
-    parse(input: string): ParsingResult {
+    parse(input: string): ParsingResponse {
         
         const parts = input.split("000");
 
@@ -16,7 +16,7 @@ export class ParserServiceV2 implements ParserInterface {
         const firstName = parts[0];
         const lastName = parts[1];
         const clientId = parts[2].substring(0, 3) + "-" + parts[2].substring(3, parts[2].length);
-        const result = new ParsingResult(firstName, lastName, clientId, 200);
+        const result = new ParsingResponse(firstName, lastName, clientId, 200);
 
         return result;
     }

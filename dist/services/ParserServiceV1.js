@@ -9,7 +9,7 @@ class ParserServiceV1 {
                 parts.splice(i, 1);
             }
         }
-        const result = new ParsingResponse_1.ParsingResult(parts[0], parts[1], parts[2], 200);
+        const result = new ParsingResponse_1.ParsingResponse(parts[0], parts[1], parts[2], 200);
         return result;
     }
 }

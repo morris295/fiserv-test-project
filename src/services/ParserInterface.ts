@@ -1,5 +1,5 @@
-import { ParsingResult } from "../types/ParsingResponse";
+import { ParsingResponse } from "../types/ParsingResponse";
 
 export interface ParserInterface {
-    parse(input: string): ParsingResult;
+    parse(input: string): ParsingResponse;
 }

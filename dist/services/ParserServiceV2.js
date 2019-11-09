@@ -13,7 +13,7 @@ class ParserServiceV2 {
         const firstName = parts[0];
         const lastName = parts[1];
         const clientId = parts[2].substring(0, 3) + "-" + parts[2].substring(3, parts[2].length);
-        const result = new ParsingResponse_1.ParsingResult(firstName, lastName, clientId, 200);
+        const result = new ParsingResponse_1.ParsingResponse(firstName, lastName, clientId, 200);
         return result;
     }
 }
