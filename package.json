@@ -1,0 +1,21 @@
+{
+  "name": "fiserv-audition",
+  "version": "1.0.0",
+  "description": "Audition project for fiserv",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run serve",
+    "serve": "node dist/server.js"
+  },
+  "author": "Jesse Morris",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/express": "^4.17.2",
+    "express": "^4.17.1"
+  }
+}
